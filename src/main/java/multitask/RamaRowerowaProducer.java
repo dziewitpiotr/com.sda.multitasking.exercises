@@ -3,9 +3,9 @@ package multitask;
 import com.sda.multitasking.exercises.PrzeznaczenieWiekowe;
 import com.sda.multitasking.exercises.RamaRowerowa;
 
-public class RamaProducer extends Producer{
+public class RamaRowerowaProducer extends Producer{
 
-    public RamaProducer(Magazyn magazyn) {
+    public RamaRowerowaProducer(Magazyn magazyn) {
         super(magazyn);
     }
 
@@ -14,7 +14,7 @@ public class RamaProducer extends Producer{
 
         while (working) {
             try {
-                Thread.sleep(20000);
+                Thread.sleep(16000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
